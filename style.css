@@ -1,0 +1,98 @@
+/*
+Theme Name:     Reidys Signs - a Twenty Twelve Child
+Theme URI:      http://reidysigns.com.au/
+Description:    Child theme for the Twenty Twelve theme 
+Author:         Byron Levene
+Author URI:     http://byronlevene.net/
+Template:       twentytwelve
+Version:        0.1.4
+*/
+
+@import url("../twentytwelve/style.css");
+
+a {
+color:#cc0000;
+}
+
+a:hover {
+color:#990000;
+}
+
+body {
+background-color:#000000;
+color:#c9c9c9;
+
+}
+
+.site {
+background-color:#010101;
+}
+
+#backgroundLogo {
+background-image:url('/wp-content/uploads/2013/02/ReidySignsBanner_vertical.svg');
+background-repeat:no-repeat;
+background-position:fixed;
+}
+
+
+
+/* Custom Header Styles */
+
+#logoSpace {
+width:817px;
+height:111px;
+background-image:url('/wp-content/uploads/2013/02/ReidySignsBanner_gradiant.svg');
+background-repeat:no-repeat;
+}
+
+.site-header h1 a {
+display:none;
+}
+
+#contactSpace {
+position: relative;
+margin-left: 730px;
+top: -110px;
+color:#c9c9c9;
+}
+
+/* Navigation Styles */
+
+.main-navigation li a {
+color:#cc0000;
+}
+
+.main-navigation li a:hover {
+color:#990000;
+}
+
+.main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a {
+color:#990000;
+}
+
+/* Content Styles */
+
+.entry-header .entry-title {
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #FFFFFF;
+font-size: 26pt;
+font-style:italic;
+color:#CC0000;
+text-transform: uppercase;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* Widget Area Styles */
+
+.widget-area .widget h3 {
+margin-bottom:10px;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #FFFFFF;
+}
+
+.widget-title {
+font-size:18pt;
+font-style:italic;
+color:#CC0000;
+}

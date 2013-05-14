@@ -5,10 +5,11 @@ Description:    Child theme for the Twenty Twelve theme
 Author:         Byron Levene
 Author URI:     http://byronlevene.net/
 Template:       twentytwelve
-Version:        0.1.4
+Version:        0.1.8
 */
 
 @import url("../twentytwelve/style.css");
+@import url(http://fonts.googleapis.com/css?family=Aguafina+Script);
 
 a {
 color:#cc0000;
@@ -19,17 +20,30 @@ color:#990000;
 }
 
 body {
-background-color:#000000;
-color:#c9c9c9;
-
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.35) 47%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.9)), color-stop(47%,rgba(0,0,0,0.35)), color-stop(100%,rgba(0,0,0,0.9))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.35) 47%,rgba(0,0,0,0.9) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.35) 47%,rgba(0,0,0,0.9) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.35) 47%,rgba(0,0,0,0.9) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.35) 47%,rgba(0,0,0,0.9) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#e6000000',GradientType=0 ); /* IE6-9 */
+display:!important;
+color:#cccccc;
+background-image:url('img/ReidySbackground_01.gif');
 }
 
 .site {
-background-color:#010101;
+background: -moz-linear-gradient(top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.9)), color-stop(100%,rgba(0,0,0,0.9))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#e6000000',GradientType=0 ); /* IE6-9 */
+
 }
 
 #backgroundLogo {
-background-image:url('/wp-content/uploads/2013/02/ReidySignsBanner_vertical.svg');
 background-repeat:no-repeat;
 background-position:fixed;
 }
@@ -41,7 +55,7 @@ background-position:fixed;
 #logoSpace {
 width:817px;
 height:111px;
-background-image:url('/wp-content/uploads/2013/02/ReidySignsBanner_gradiant.svg');
+background-image:url('img/ReidySignsBanner_gradiant.svg');
 background-repeat:no-repeat;
 }
 
@@ -73,14 +87,20 @@ color:#990000;
 /* Content Styles */
 
 .entry-header .entry-title {
--webkit-text-stroke-width: 1px;
+/*-webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: #FFFFFF;
-font-size: 26pt;
+
 font-style:italic;
 color:#CC0000;
 text-transform: uppercase;
 text-decoration: none;
-font-weight: bold;
+font-weight: bold; */
+font-family: 'Aguafina Script', cursive;
+font-size: 36pt;
+}
+
+.entry-content p {
+color:#cccccc;
 }
 
 /* Widget Area Styles */
@@ -95,4 +115,8 @@ margin-bottom:10px;
 font-size:18pt;
 font-style:italic;
 color:#CC0000;
+}
+
+.widget-area .widget a {
+color:#cccccc;
 }
